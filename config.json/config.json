@@ -1,0 +1,18 @@
+{
+  "log": {"loglevel": "warning"},
+  "inbounds": [
+    {
+      "port": __PORT__,
+      "protocol": "vless",
+      "settings": {
+        "clients": [{"id": "6855b5fc-34d5-4bf1-a551-338a1bd16c97", "flow": ""}],
+        "decryption": "none"
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {"path": "/ray-f88086"}
+      }
+    }
+  ],
+  "outbounds": [{"protocol": "freedom"}]
+}
